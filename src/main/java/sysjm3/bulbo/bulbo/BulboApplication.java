@@ -1,8 +1,9 @@
 package sysjm3.bulbo.bulbo;
 
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringApplication
+;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+
 
 @SpringBootApplication
 public class BulboApplication {

@@ -3,12 +3,15 @@ package sysjm3.bulbo.bulbo.model;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -16,6 +19,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @SuppressWarnings("serial")
+@Entity
+@Table(name="user")
 public class User implements Serializable {
 	
 
@@ -57,6 +62,7 @@ public class User implements Serializable {
     public UUID getId() {
         return id;
     }
+    
 
     /**
      * Setter for the field id
@@ -193,3 +199,4 @@ public class User implements Serializable {
         return "User{" + "id=" + id + ", username=" + username + ", name=" + name + ", email=" + email + ", password=" + password + ", registerDate=" + registerDate + "}";
     }
 }
+
